@@ -24,7 +24,7 @@ public class BoxScore {
 		return (score == pt1Made + (2 * pt2Made));
 	}
 
-	public static BoxScore advanceScore(
+	public static synchronized BoxScore advanceScore(
 			BoxScore boxScore,
 			int scoreDelta,
 			int pt1Delta,
